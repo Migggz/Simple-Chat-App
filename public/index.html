@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Join | ChatApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">  
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body class="centered-form">
+        <div class="centered-form__form">
+            <form action="/chat.html">
+                <div class="form-field">
+                    <h3>Join Chat</h3>
+                </div>
+                <div class="form-field">
+                    <label>Display Name</label>
+                    <input type="text" name="name" autofocus required/>
+                </div>
+                <div class="form-field">
+                    <label>Room Name</label>
+                    <input type="text" name="room" id="newRoom" required/>
+                </div>
+                <div class="form-field">
+                    <label>Active Rooms</label>
+                    <select id="rooms" name="room" required>
+                        <option onchange="enableInput()" value="" data-default selected default></option>
+                        <option id="chooseRoom" selected disabled default>Choose Room</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <button>Join</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="/js/libs/jquery.js"></script>
+        <script src="/js/index.js"></script>
+    </body>
+</html>
